@@ -36,6 +36,9 @@ int pedirSuma(int *resultado){
 	scanf("%d",&num1);
 	printf("\n ingrese numero 2: ");
 	scanf("%d",&num2);
+
+	printf("valor antes %d\n",*resultado);
 	*resultado = num1 + num2; //escribimos a donde esta direcc de memoria apunta
+	printf("valor despues %d\n",*resultado);
 	return 0;
 }
