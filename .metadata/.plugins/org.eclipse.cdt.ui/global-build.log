@@ -1,95 +1,26 @@
-20:04:31 **** Incremental Build of configuration Debug for project SumaProj ****
+22:20:12 **** Incremental Build of configuration Debug for project SDatProj1 ****
 make all 
-Building file: ../src/SumaProj.c
+Building file: ../src/SDatProj1.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
-../src/SumaProj.c: In function ‘pedirSuma’:
-../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
-  int result = 0;
-      ^~~~~~
-Finished building: ../src/SumaProj.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDatProj1.d" -MT"src/SDatProj1.o" -o "src/SDatProj1.o" "../src/SDatProj1.c"
+../src/SDatProj1.c: In function ‘main’:
+../src/SDatProj1.c:16:5: warning: implicit declaration of function ‘pedirCalcularProm’ [-Wimplicit-function-declaration]
+  if(pedirCalcularProm(&fProm)==0){
+     ^~~~~~~~~~~~~~~~~
+../src/SDatProj1.c:17:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+   printf("el promedio da %d \n",fProm);
+                           ^
+../src/SDatProj1.c: In function ‘pedirCalcularProm’:
+../src/SDatProj1.c:36:31: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+  printf("el valor prom antes %d \n", *prom);
+                               ^
+../src/SDatProj1.c:38:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+  printf("el valor prom despues %d \n", *prom);
+                                 ^
+Finished building: ../src/SDatProj1.c
  
-Building target: SumaProj
+Building target: SDatProj1
 Invoking: GCC C Linker
-gcc  -o "SumaProj"  ./src/SumaProj.o   
-Finished building target: SumaProj
- 
-20:04:35 **** Incremental Build of configuration Debug for project SumaProj ****
-make all 
-make: No se hace nada para 'all'.
-20:06:30 **** Incremental Build of configuration Debug for project SumaProj ****
-make all 
-Building file: ../src/SumaProj.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
-../src/SumaProj.c: In function ‘pedirSuma’:
-../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
-  int result = 0;
-      ^~~~~~
-Finished building: ../src/SumaProj.c
- 
-Building target: SumaProj
-Invoking: GCC C Linker
-gcc  -o "SumaProj"  ./src/SumaProj.o   
-Finished building target: SumaProj
- 
-20:09:42 **** Incremental Build of configuration Debug for project SumaProj ****
-make all 
-Building file: ../src/SumaProj.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
-../src/SumaProj.c: In function ‘pedirSuma’:
-../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
-  int result = 0;
-      ^~~~~~
-Finished building: ../src/SumaProj.c
- 
-Building target: SumaProj
-Invoking: GCC C Linker
-gcc  -o "SumaProj"  ./src/SumaProj.o   
-Finished building target: SumaProj
- 
-20:27:32 **** Incremental Build of configuration Debug for project SumaProj ****
-make all 
-Building file: ../src/SumaProj.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
-../src/SumaProj.c: In function ‘pedirSuma’:
-../src/SumaProj.c:42:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  resultado = num1 + num2; //escribimos a donde esta direcc de memoria apunta
-            ^
-../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
-  int result = 0;
-      ^~~~~~
-Finished building: ../src/SumaProj.c
- 
-Building target: SumaProj
-Invoking: GCC C Linker
-gcc  -o "SumaProj"  ./src/SumaProj.o   
-Finished building target: SumaProj
- 
-20:28:27 **** Incremental Build of configuration Debug for project SumaProj ****
-make all 
-Building file: ../src/SumaProj.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
-../src/SumaProj.c: In function ‘pedirSuma’:
-../src/SumaProj.c:41:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
-  printf("valor antes %d\n",resultado);
-                       ^
-../src/SumaProj.c:42:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-  resultado = num1 + num2; //escribimos a donde esta direcc de memoria apunta
-            ^
-../src/SumaProj.c:43:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
-  printf("valor despues %d\n",resultado);
-                         ^
-../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
-  int result = 0;
-      ^~~~~~
-Finished building: ../src/SumaProj.c
- 
-Building target: SumaProj
-Invoking: GCC C Linker
-gcc  -o "SumaProj"  ./src/SumaProj.o   
-Finished building target: SumaProj
+gcc  -o "SDatProj1"  ./src/SDatProj1.o   
+Finished building target: SDatProj1
  
