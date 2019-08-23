@@ -1,0 +1,28 @@
+20:28:27 **** Incremental Build of configuration Debug for project SumaProj ****
+make all 
+Building file: ../src/SumaProj.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SumaProj.d" -MT"src/SumaProj.o" -o "src/SumaProj.o" "../src/SumaProj.c"
+../src/SumaProj.c: In function ‘pedirSuma’:
+../src/SumaProj.c:41:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+  printf("valor antes %d\n",resultado);
+                       ^
+../src/SumaProj.c:42:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  resultado = num1 + num2; //escribimos a donde esta direcc de memoria apunta
+            ^
+../src/SumaProj.c:43:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+  printf("valor despues %d\n",resultado);
+                         ^
+../src/SumaProj.c:34:6: warning: unused variable ‘result’ [-Wunused-variable]
+  int result = 0;
+      ^~~~~~
+Finished building: ../src/SumaProj.c
+ 
+Building target: SumaProj
+Invoking: GCC C Linker
+gcc  -o "SumaProj"  ./src/SumaProj.o   
+Finished building target: SumaProj
+ 
+
+20:28:27 Build Finished. 0 errors, 4 warnings. (took 339ms)
+

@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : SumaProj.c
+ Author      : Santiago
+ Version     :
+ Copyright   : GLP 3
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int resultado = pedirSuma();
+	printf("la suma da %d",resultado);
+	return EXIT_SUCCESS;
+}
+
+int pedirSuma(){
+	int num1 = 0;
+	int num2 = 0;
+	int result = 0;
+
+	printf("ingrese numero 1: ");
+	scanf("%d",&num1);
+	printf("ingrese numero 2: ");
+	scanf("%d",&num2);
+	result = num1 + num2;
+	return result;
+}

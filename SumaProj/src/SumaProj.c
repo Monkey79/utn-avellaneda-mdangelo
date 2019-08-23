@@ -1,0 +1,44 @@
+/*
+ ============================================================================
+ Name        : SumaProj.c
+ Author      : MDangelo
+ Version     :
+ Copyright   : GLP 3
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int pedirSuma(int *resultado);
+
+
+///home/alumno/eclipse-workspace
+int main(void) {
+	int resultado = 0;
+
+	if(pedirSuma(&resultado) == 0){
+		printf("la suma da %d",resultado);
+	}else
+		printf("hubo un error!!");
+
+
+	return EXIT_SUCCESS;
+}
+
+//espera un puntero del tipo int
+int pedirSuma(int *resultado){
+	int num1 = 0;
+	int num2 = 0;
+
+	printf("\n ingrese numero 1: ");
+	scanf("%d",&num1);
+	printf("\n ingrese numero 2: ");
+	scanf("%d",&num2);
+
+	printf("valor antes %d\n",*resultado);
+	*resultado = num1 + num2; //escribimos a donde esta direcc de memoria apunta
+	printf("valor despues %d\n",*resultado);
+	return 0;
+}
