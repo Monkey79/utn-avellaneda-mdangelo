@@ -22,12 +22,12 @@ int main(void) {
 	int iCont = 0;
 
 	int iMax = 0;
-	int iMin = 99999;
+	int iMin = 0;
 	int iAux = 0;
 
 		iTop = pedirCantDatos();
 
-		while(iCont < iTop){
+		for(int i=0;i < iTop;i++){
 			iAux = pedirValor();
 			checkMaxMin(&iMax, &iMin, iAux);
 			iCont++;
@@ -57,9 +57,11 @@ int pedirValor(){
 }
 
 void checkMaxMin(int *iMax, int *iMin, int iVal) {
-	if(iVal < *iMin) {
+	if(*iMin==0) {
 		*iMin = iVal;
-	}else if(iVal > *iMax){
+	}else if(iVal < *iMin){
+		*iMin = iVal;
+	}else if(iVal>*iMax){
 		*iMax = iVal;
 	}
 
@@ -67,7 +69,7 @@ void checkMaxMin(int *iMax, int *iMin, int iVal) {
 
 void informarMaxMin(int *iMax, int *iMin){
 	printf("*************INFORME*********************** \n");
-	printf("\n El valor Maximo fue: %d ",*iMax);
-	printf("\n El valor Minimo fue: %d ",*iMin);
+	printf("El valor Maximo fue: %d ",*iMax);
+	printf("El valor Minimo fue: %d ",*iMin);
 	printf("\n *******************************************");
 }
