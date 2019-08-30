@@ -1,26 +1,29 @@
-22:20:12 **** Incremental Build of configuration Debug for project SDatProj1 ****
+22:14:14 **** Incremental Build of configuration Debug for project GetNUmProj ****
 make all 
-Building file: ../src/SDatProj1.c
+Building file: ../src/GetNUmProj.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDatProj1.d" -MT"src/SDatProj1.o" -o "src/SDatProj1.o" "../src/SDatProj1.c"
-../src/SDatProj1.c: In function ‘main’:
-../src/SDatProj1.c:16:5: warning: implicit declaration of function ‘pedirCalcularProm’ [-Wimplicit-function-declaration]
-  if(pedirCalcularProm(&fProm)==0){
-     ^~~~~~~~~~~~~~~~~
-../src/SDatProj1.c:17:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
-   printf("el promedio da %d \n",fProm);
-                           ^
-../src/SDatProj1.c: In function ‘pedirCalcularProm’:
-../src/SDatProj1.c:36:31: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
-  printf("el valor prom antes %d \n", *prom);
-                               ^
-../src/SDatProj1.c:38:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
-  printf("el valor prom despues %d \n", *prom);
-                                 ^
-Finished building: ../src/SDatProj1.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GetNUmProj.d" -MT"src/GetNUmProj.o" -o "src/GetNUmProj.o" "../src/GetNUmProj.c"
+../src/GetNUmProj.c: In function ‘main’:
+../src/GetNUmProj.c:28:8: warning: unused variable ‘saludo’ [-Wunused-variable]
+  char *saludo = "mira vos esto funciona";
+        ^~~~~~
+../src/GetNUmProj.c: In function ‘getNumero’:
+../src/GetNUmProj.c:57:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("\n[ERROR]Usted excedio la cantidad de reintentos FIN FUNCION getNumero \n",iNum);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/GetNUmProj.c
  
-Building target: SDatProj1
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘mostrarMnsjYGuardarNum’:
+../src/utn.c:11:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  scanf("%d",&iNum);
+          ^
+Finished building: ../src/utn.c
+ 
+Building target: GetNUmProj
 Invoking: GCC C Linker
-gcc  -o "SDatProj1"  ./src/SDatProj1.o   
-Finished building target: SDatProj1
+gcc  -o "GetNUmProj"  ./src/GetNUmProj.o ./src/utn.o   
+Finished building target: GetNUmProj
  

@@ -1,0 +1,17 @@
+Notas:
+
+cuando se trabaja con "string" en C:
+	UNA FORMA DE ESCRIBIR CONSTANTES DEL TIPO STRING EN C
+
+	1-char *saludo = "hola"; --> Esto sirve PERO hay que tener en cuenta : 
+		Asi de esta manera el texto (que en un puntero) se guarda en una direccion de memoria que NO 
+		se puede modificar por eso no podria modificar su contenido
+		
+		Para imprimirlo : printf("%s",saludo); //cuando en la mascara pongo %s quiere decir que espera un PUNTERO
+		y como saludo ya ES un puntero no va "&"
+
+	2-en este curso se acostumbra a usar los "string" asi 
+			#define SALUDO "HOla"
+
+	VER APUNTE DE LA CLASE 4
+	
