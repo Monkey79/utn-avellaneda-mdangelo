@@ -1,29 +1,36 @@
-22:14:14 **** Incremental Build of configuration Debug for project GetNUmProj ****
+09:13:03 **** Clean-only build of configuration Debug for project CalcProj ****
+make clean 
+rm -rf  ./src/menu-view/menuView.o  ./src/basic-math/bscMath.o  ./src/CalcProj.o ./src/hello.o  ./src/menu-view/menuView.d  ./src/basic-math/bscMath.d  ./src/CalcProj.d ./src/hello.d  CalcProj
+ 
+09:13:03 **** Build of configuration Debug for project CalcProj ****
 make all 
-Building file: ../src/GetNUmProj.c
+Building file: ../src/menu-view/menuView.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GetNUmProj.d" -MT"src/GetNUmProj.o" -o "src/GetNUmProj.o" "../src/GetNUmProj.c"
-../src/GetNUmProj.c: In function ‘main’:
-../src/GetNUmProj.c:28:8: warning: unused variable ‘saludo’ [-Wunused-variable]
-  char *saludo = "mira vos esto funciona";
-        ^~~~~~
-../src/GetNUmProj.c: In function ‘getNumero’:
-../src/GetNUmProj.c:57:10: warning: too many arguments for format [-Wformat-extra-args]
-   printf("\n[ERROR]Usted excedio la cantidad de reintentos FIN FUNCION getNumero \n",iNum);
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Finished building: ../src/GetNUmProj.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu-view/menuView.d" -MT"src/menu-view/menuView.o" -o "src/menu-view/menuView.o" "../src/menu-view/menuView.c"
+../src/menu-view/menuView.c: In function ‘mBuildMenuAndSaveOpt’:
+../src/menu-view/menuView.c:28:2: warning: implicit declaration of function ‘__fpurge’; did you mean ‘__wur’? [-Wimplicit-function-declaration]
+  __fpurge(stdin);
+  ^~~~~~~~
+  __wur
+Finished building: ../src/menu-view/menuView.c
  
-Building file: ../src/utn.c
+Building file: ../src/basic-math/bscMath.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
-../src/utn.c: In function ‘mostrarMnsjYGuardarNum’:
-../src/utn.c:11:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
-  scanf("%d",&iNum);
-          ^
-Finished building: ../src/utn.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/basic-math/bscMath.d" -MT"src/basic-math/bscMath.o" -o "src/basic-math/bscMath.o" "../src/basic-math/bscMath.c"
+Finished building: ../src/basic-math/bscMath.c
  
-Building target: GetNUmProj
+Building file: ../src/CalcProj.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CalcProj.d" -MT"src/CalcProj.o" -o "src/CalcProj.o" "../src/CalcProj.c"
+Finished building: ../src/CalcProj.c
+ 
+Building file: ../src/hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hello.d" -MT"src/hello.o" -o "src/hello.o" "../src/hello.c"
+Finished building: ../src/hello.c
+ 
+Building target: CalcProj
 Invoking: GCC C Linker
-gcc  -o "GetNUmProj"  ./src/GetNUmProj.o ./src/utn.o   
-Finished building target: GetNUmProj
+gcc  -o "CalcProj"  ./src/menu-view/menuView.o  ./src/basic-math/bscMath.o  ./src/CalcProj.o ./src/hello.o   
+Finished building target: CalcProj
  
