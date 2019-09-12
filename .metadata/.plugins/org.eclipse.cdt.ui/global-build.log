@@ -1,36 +1,27 @@
-09:13:03 **** Clean-only build of configuration Debug for project CalcProj ****
-make clean 
-rm -rf  ./src/menu-view/menuView.o  ./src/basic-math/bscMath.o  ./src/CalcProj.o ./src/hello.o  ./src/menu-view/menuView.d  ./src/basic-math/bscMath.d  ./src/CalcProj.d ./src/hello.d  CalcProj
- 
-09:13:03 **** Build of configuration Debug for project CalcProj ****
+22:13:25 **** Incremental Build of configuration Debug for project Arrays1 ****
 make all 
-Building file: ../src/menu-view/menuView.c
+Building file: ../src/my_libs/utnArray.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu-view/menuView.d" -MT"src/menu-view/menuView.o" -o "src/menu-view/menuView.o" "../src/menu-view/menuView.c"
-../src/menu-view/menuView.c: In function ‘mBuildMenuAndSaveOpt’:
-../src/menu-view/menuView.c:28:2: warning: implicit declaration of function ‘__fpurge’; did you mean ‘__wur’? [-Wimplicit-function-declaration]
-  __fpurge(stdin);
-  ^~~~~~~~
-  __wur
-Finished building: ../src/menu-view/menuView.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
+Finished building: ../src/my_libs/utnArray.c
  
-Building file: ../src/basic-math/bscMath.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/basic-math/bscMath.d" -MT"src/basic-math/bscMath.o" -o "src/basic-math/bscMath.o" "../src/basic-math/bscMath.c"
-Finished building: ../src/basic-math/bscMath.c
- 
-Building file: ../src/CalcProj.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CalcProj.d" -MT"src/CalcProj.o" -o "src/CalcProj.o" "../src/CalcProj.c"
-Finished building: ../src/CalcProj.c
- 
-Building file: ../src/hello.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hello.d" -MT"src/hello.o" -o "src/hello.o" "../src/hello.c"
-Finished building: ../src/hello.c
- 
-Building target: CalcProj
+Building target: Arrays1
 Invoking: GCC C Linker
-gcc  -o "CalcProj"  ./src/menu-view/menuView.o  ./src/basic-math/bscMath.o  ./src/CalcProj.o ./src/hello.o   
-Finished building target: CalcProj
+gcc  -o "Arrays1"  ./src/my_libs/utnArray.o  ./src/Arrays1.o   
+Finished building target: Arrays1
+ 
+22:13:29 **** Incremental Build of configuration Debug for project Arrays1 ****
+make all 
+make: No se hace nada para 'all'.
+22:13:54 **** Incremental Build of configuration Debug for project Arrays1 ****
+make all 
+Building file: ../src/my_libs/utnArray.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
+Finished building: ../src/my_libs/utnArray.c
+ 
+Building target: Arrays1
+Invoking: GCC C Linker
+gcc  -o "Arrays1"  ./src/my_libs/utnArray.o  ./src/Arrays1.o   
+Finished building target: Arrays1
  
