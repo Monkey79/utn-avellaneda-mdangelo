@@ -1,8 +1,22 @@
-22:13:25 **** Incremental Build of configuration Debug for project Arrays1 ****
+20:43:33 **** Incremental Build of configuration Debug for project Arrays1 ****
 make all 
 Building file: ../src/my_libs/utnArray.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
+../src/my_libs/utnArray.c: In function ‘getString’:
+../src/my_libs/utnArray.c:19:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("\n=iTop =: %d", vcChr);
+                      ^
+../src/my_libs/utnArray.c: In function ‘showChrsArrayContent’:
+../src/my_libs/utnArray.c:66:60: warning: ‘sizeof’ on array function parameter ‘aChrsArr’ will return size of ‘char *’ [-Wsizeof-array-argument]
+  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
+                                                            ^
+../src/my_libs/utnArray.c:64:31: note: declared here
+ int showChrsArrayContent(char aChrsArr[],int iFrom, int iTo, int iTop){
+                               ^~~~~~~~
+../src/my_libs/utnArray.c:66:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
+                                                  ^
 Finished building: ../src/my_libs/utnArray.c
  
 Building target: Arrays1
@@ -10,14 +24,28 @@ Invoking: GCC C Linker
 gcc  -o "Arrays1"  ./src/my_libs/utnArray.o  ./src/Arrays1.o   
 Finished building target: Arrays1
  
-22:13:29 **** Incremental Build of configuration Debug for project Arrays1 ****
+20:43:37 **** Incremental Build of configuration Debug for project Arrays1 ****
 make all 
 make: No se hace nada para 'all'.
-22:13:54 **** Incremental Build of configuration Debug for project Arrays1 ****
+20:47:12 **** Incremental Build of configuration Debug for project Arrays1 ****
 make all 
 Building file: ../src/my_libs/utnArray.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
+../src/my_libs/utnArray.c: In function ‘getString’:
+../src/my_libs/utnArray.c:19:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
+  printf("\n=iTop =: %d", vcChr);
+                      ^
+../src/my_libs/utnArray.c: In function ‘showChrsArrayContent’:
+../src/my_libs/utnArray.c:66:60: warning: ‘sizeof’ on array function parameter ‘aChrsArr’ will return size of ‘char *’ [-Wsizeof-array-argument]
+  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
+                                                            ^
+../src/my_libs/utnArray.c:64:31: note: declared here
+ int showChrsArrayContent(char aChrsArr[],int iFrom, int iTo, int iTop){
+                               ^~~~~~~~
+../src/my_libs/utnArray.c:66:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
+                                                  ^
 Finished building: ../src/my_libs/utnArray.c
  
 Building target: Arrays1
