@@ -1095,9 +1095,6 @@
 					<entry kind="macro" name="__GLIBCXX_BITSIZE_INT_N_0" value="128">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GLIBCXX_TYPE_INT_N_0" value="201309">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__GLIBCXX_TYPE_INT_N_0" value="__int128">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -1147,9 +1144,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__INT64_C(c)" value="c ## L">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__INT64_MAX__" value="(-__WCHAR_MAX__ - 1)">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__INT64_MAX__" value="0x7fffffffffffffffL">
@@ -1234,6 +1228,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__LDBL_DENORM_MIN__" value="3.64519953188247460253e-4951L">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__LDBL_DIG__" value="18">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__LDBL_EPSILON__" value="1.08420217248550443401e-19L">
@@ -1527,6 +1524,9 @@
 					<entry kind="macro" name="__WCHAR_MAX__" value="0x7fffffff">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__WCHAR_MIN__" value="(-__WCHAR_MAX__ - 1)">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__WCHAR_TYPE__" value="int">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -1626,6 +1626,9 @@
 					<entry kind="macro" name="__cpp_rvalue_references" value="200610">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__cpp_sized_deallocation" value="201309">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__cpp_static_assert" value="200410">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -1675,9 +1678,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__unix__" value="1">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__x86_64" value="18">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__x86_64" value="1">

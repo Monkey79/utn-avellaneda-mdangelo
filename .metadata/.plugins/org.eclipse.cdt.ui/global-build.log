@@ -1,55 +1,33 @@
-20:43:33 **** Incremental Build of configuration Debug for project Arrays1 ****
+21:26:02 **** Build of configuration Debug for project PautaPublc ****
 make all 
-Building file: ../src/my_libs/utnArray.c
+Building file: ../src/my-libs/AdvertisingMng.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
-../src/my_libs/utnArray.c: In function ‘getString’:
-../src/my_libs/utnArray.c:19:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
-  printf("\n=iTop =: %d", vcChr);
-                      ^
-../src/my_libs/utnArray.c: In function ‘showChrsArrayContent’:
-../src/my_libs/utnArray.c:66:60: warning: ‘sizeof’ on array function parameter ‘aChrsArr’ will return size of ‘char *’ [-Wsizeof-array-argument]
-  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
-                                                            ^
-../src/my_libs/utnArray.c:64:31: note: declared here
- int showChrsArrayContent(char aChrsArr[],int iFrom, int iTo, int iTop){
-                               ^~~~~~~~
-../src/my_libs/utnArray.c:66:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
-  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
-                                                  ^
-Finished building: ../src/my_libs/utnArray.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my-libs/AdvertisingMng.d" -MT"src/my-libs/AdvertisingMng.o" -o "src/my-libs/AdvertisingMng.o" "../src/my-libs/AdvertisingMng.c"
+../src/my-libs/AdvertisingMng.c:20:1: warning: data definition has no type or storage class
+ _adv_getScreenValues(Screen screens[], int length);
+ ^~~~~~~~~~~~~~~~~~~~
+../src/my-libs/AdvertisingMng.c:20:1: warning: type defaults to ‘int’ in declaration of ‘_adv_getScreenValues’ [-Wimplicit-int]
+../src/my-libs/AdvertisingMng.c: In function ‘adv_createScreen’:
+../src/my-libs/AdvertisingMng.c:34:4: warning: implicit declaration of function ‘__fpurge’ [-Wimplicit-function-declaration]
+    __fpurge(stdin);
+    ^~~~~~~~
+Finished building: ../src/my-libs/AdvertisingMng.c
  
-Building target: Arrays1
+Building file: ../src/my-libs/Screen.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my-libs/Screen.d" -MT"src/my-libs/Screen.o" -o "src/my-libs/Screen.o" "../src/my-libs/Screen.c"
+Finished building: ../src/my-libs/Screen.c
+ 
+Building file: ../src/PautaPublc.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PautaPublc.d" -MT"src/PautaPublc.o" -o "src/PautaPublc.o" "../src/PautaPublc.c"
+Finished building: ../src/PautaPublc.c
+ 
+Building target: PautaPublc
 Invoking: GCC C Linker
-gcc  -o "Arrays1"  ./src/my_libs/utnArray.o  ./src/Arrays1.o   
-Finished building target: Arrays1
+gcc  -o "PautaPublc"  ./src/my-libs/AdvertisingMng.o ./src/my-libs/Screen.o  ./src/PautaPublc.o   
+Finished building target: PautaPublc
  
-20:43:37 **** Incremental Build of configuration Debug for project Arrays1 ****
+21:26:07 **** Incremental Build of configuration Debug for project PautaPublc ****
 make all 
 make: No se hace nada para 'all'.
-20:47:12 **** Incremental Build of configuration Debug for project Arrays1 ****
-make all 
-Building file: ../src/my_libs/utnArray.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/my_libs/utnArray.d" -MT"src/my_libs/utnArray.o" -o "src/my_libs/utnArray.o" "../src/my_libs/utnArray.c"
-../src/my_libs/utnArray.c: In function ‘getString’:
-../src/my_libs/utnArray.c:19:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘char *’ [-Wformat=]
-  printf("\n=iTop =: %d", vcChr);
-                      ^
-../src/my_libs/utnArray.c: In function ‘showChrsArrayContent’:
-../src/my_libs/utnArray.c:66:60: warning: ‘sizeof’ on array function parameter ‘aChrsArr’ will return size of ‘char *’ [-Wsizeof-array-argument]
-  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
-                                                            ^
-../src/my_libs/utnArray.c:64:31: note: declared here
- int showChrsArrayContent(char aChrsArr[],int iFrom, int iTo, int iTop){
-                               ^~~~~~~~
-../src/my_libs/utnArray.c:66:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
-  printf("\n=showChrsArrayContent array.SIZEOF=: %d", sizeof(aChrsArr));
-                                                  ^
-Finished building: ../src/my_libs/utnArray.c
- 
-Building target: Arrays1
-Invoking: GCC C Linker
-gcc  -o "Arrays1"  ./src/my_libs/utnArray.o  ./src/Arrays1.o   
-Finished building target: Arrays1
- 
